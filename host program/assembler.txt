@@ -1,0 +1,19 @@
+.BYTE - accepts multiple
+.WORD
+.ASCII - \ is escape, not needed. use byte
+
+; is comment
+^ is PC?
+
+$-hex
+%-binary
+> high byte
+<low byte
+
+' is char
+"text" for byte
+
+.ALIAS
+.ORG
+.space
+.advance

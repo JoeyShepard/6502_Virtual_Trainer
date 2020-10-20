@@ -1,0 +1,76 @@
+to fix:
+any time refreshaddresslist appears the others should also
+check dblclick of all lists for -1
+remove all 'on error
+remove other '
+more efficient saves so is faster
+   how to do this?
+   compress -1s
+open and save while running
+   anything else while running
+stop buttons from interferring when executing
+remove all the msgboxs
+break executing on BRK or STP
+take out all debugs so cant hard crash
+why is run time sometimes negative
+   problem with timer
+   maybe use API
+also, faster way to draw
+   GDI?
+   memory buffer
+   Is drawing really much slower?
+more sophisticated keyboard event
+   with shift
+dont transfer whole memory when running
+List of last 1000 or so cycles and their flags
+   could also dump to log
+Still duplicating labels!
+   somehow left over from last run
+Stop writing to text files
+Still not jumping right
+   top address is EBAC
+   jumped to EBD5 and unseen
+Shut off UART when closed
+LDA #': is not a label
+Need some way to separate funtions from labels
+   maybe indent
+   maybe comment after shows its function
+   maybe check for functions only
+translate characters like tab to " " for text box
+run script sends signal to IDE to reload code
+Multiplier peripheral
+   need msp430 to help
+Rewind feature to see where bad byte was written from
+Check box to switch off msgbox after running
+A lot of slowdown seems to come from VB
+Command to dump registers
+Send back timer to see how long was waiting
+breakpoints ignored while cycling
+checkbox to run file before load (run.bat)
+jump to last address after emulation stops
+peripheral to input 0-255 with two sliders
+.proc could act as functions
+post in Code::Blocks about making 6502 file
+pro::@lbl in mem manager
+maybe looping through bytes to send back might waste time
+analyze time spent doing uart and see how to improve
+starting to drag sends pause
+just send without ack. can ack and resend if necessary later
+watch window like 8051 simulator
+
+6502 run over UART
+   virtual panel with peripherals
+      slider for value? too small
+   cause interrupt on button
+   text tool?
+   buttons and switches can also be set to trigger interupts
+   cycle picture
+      mouse over to see what signals were
+      red LEDs to show current state
+      blue LEDs to set states
+   button to fetch registers
+      could be subroutine or could just be emulated by the msp430
+      option to do automatically on break
+      gray them out when not current
+      would have to be just NMI
+   tooltip of section shows name, locked, code, etc
